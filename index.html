@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login-form</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background">
+        <img src="Ellipse 1.svg">
+        <img src="Ellipse 2.svg">
+        <img src="Ellipse 3.svg">
+        <!--Floating-elements-->
+        <img class="floating-element" src="Ellipse 55.svg" style="top: 15%; left: 71%;">
+        <img class="floating-element" src="Ellipse 56.svg" style="top: 20%; left: 16%;">
+        <img class="floating-element" src="Ellipse 57.svg" style="top: 70%; left: 87%;">
+        <img class="floating-element" src="nahid photo.svg" style="top: 85%; left: 82%;">
+        <img class="floating-element" src="Group 2.svg" style="top: 70%; left: 77%;">
+        <img class="floating-element" src="Ellipse.svg" style="top: 47%; left: 11%;">
+        <img class="floating-element" src="Ellipse-1.svg" style="top: 67%; left: 22%;">
+        <img class="floating-element" src="Ellipse-2.svg" style="top: 15%; left: 92%;">
+        <img class="floating-element" src="Ellipse-3.svg" style="top: 22%; left: 85%;">
+        <img class="floating-element" src="Group 1.svg" style="top: 26%; left: 76%;">
+        <img class="floating-element" src="Group 3.svg" style="top: 50%; left: 20%;">
+        <img class="floating-element" src="Group 4.svg" style="top: 27%; left: 14%;">
+        <img class="floating-element" src="Group 5.svg" style="top: 60%; left: 12%; height: 45px; width: auto;">
+        <img class="floating-element" src="Group 7.svg" style="top: 50%; left: 4%; height: 50px; width: auto;">
+        <img class="floating-element" src="Group 11.svg" style="top: 62%; left: 97%; z-index: 6;">
+        <img class="floating-element" src="Group 13.svg"
+            style="top: 39%; left: 91%; height: 50px; width: auto; z-index: 9;">
+        <img class="floating-element" src="Group 14.svg" style="top: 3%; left: 87%; height: 40px; width: auto;">
+        <img class="floating-element" src="Vector 1.svg" style="top: 71%; left: 12%; height: 50px; width: auto;">
+        <img class="floating-element" src="Vector 1.svg"
+            style="top: 71%; left: 5.35%; height: 50px; width: auto; rotate:180deg">
+        <img class="floating-element" src="clarity_connect-solid.svg"
+            style="top: 75%; left: 10%; height: 30px; width: auto;">
+        <img class="floating-element" src="Vector 3.svg" style="top: 50%; left: 93%; height: auto; width: 94px; ">
+        <img class="floating-element" src="mic.png" style="top: 85%; left: 8%; height: 55px; width:auto; ">
+
+    </div>
+    <div id="login-form" class="login-container">
+        <h2>Login to Cohorts</h2>
+        <div class="inner">
+            <div class="input-label">
+                <label>Email</label>
+                <div class="input-wrapper">
+                    <img src="4.png">
+                    <input type="email" placeholder="Enter your e-mail" required />
+                </div>
+            </div>
+            <div class="input-label">
+                <label>Password</label>
+                <div class="input-wrapper">
+                    <img src="5.png" alt="password icon">
+                    <input type="password" name="password" placeholder="Enter your password" minlength="8"
+                        maxlength="20" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        title="Password must be 8-20 characters, include at least one uppercase letter, one lowercase letter, and one number." />
+                </div>
+            </div>
+        </div>
+        <button>Login</button>
+        <h5>Forgot Password</h5>
+        <div class="social-icons">
+            <img src="1.png" alt="Google Login">
+            <img src="2.png" alt="Facebook Login">
+            <img src="3.png" alt="Apple Login">
+        </div>
+        <h6>Dont have an account?<a href="#" id="show-signup"> Sign Up</a></h6>
+    </div>
+
+    <!--sign-up form-->
+    <div id="signup-form" class="login-container" style="display: none;">
+        <h2>Sign-Up for Cohorts</h2>
+        <div class="inner">
+            <div class="input-label">
+                <label>Name</label>
+                <div class="input-wrapper">
+                    <img src="5.png" alt="user icon">
+                    <input type="text" name="name" placeholder="Enter your Name" required />
+                </div>
+            </div>
+            <div class="input-label">
+                <label>Email</label>
+                <div class="input-wrapper">
+                    <img src="4.png" alt="email icon">
+                    <input type="email" name="email" placeholder="Enter your e-mail" required />
+                </div>
+            </div>
+            <div class="input-label">
+                <label>Password</label>
+                <div class="input-wrapper">
+                    <img src="5.png" alt="password icon">
+                    <input type="password" name="password" placeholder="Enter your password" minlength="8"
+                        maxlength="20" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        title="Password must be 8-20 characters, include at least one uppercase letter, one lowercase letter, and one number." />
+                </div>
+            </div>
+        </div>
+        <button>Sign Up</button>
+        <h5>Forgot Password</h5>
+        <div class="social-icons">
+            <img src="1.png" alt="Google Login">
+            <img src="2.png" alt="Facebook Login">
+            <img src="3.png" alt="Apple Login">
+        </div>
+        <h6>Already have an account? <a href="#" id="show-login">Login</a></h6>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

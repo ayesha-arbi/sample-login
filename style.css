@@ -1,0 +1,157 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+body{
+    font-family: "Inter", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* full screen height */
+    margin: 0; /* remove default margin */
+}
+.background {
+    position: fixed; /* so it stays behind everything */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* center perfectly */
+    z-index: -1; /* send behind the login form */
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* so it doesn’t block clicks */
+}
+
+.background img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* center each orbit */
+    object-fit: contain;
+    pointer-events: none;
+    z-index: 4;
+}
+
+/* Optional: layering control if needed */
+.background img:nth-child(1) {
+    width: 60vw;
+    z-index: 3;
+}
+.background img:nth-child(2) {
+    width: 78vw;
+    z-index: 2;
+}
+.background img:nth-child(3) {
+    width:95vw;
+    z-index: 1;
+}
+.floating-element {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    transition: transform 0.8s ease, opacity 0.8s ease;
+    z-index: 5;
+}
+
+.login-container{
+    width:30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+.login-container h2{
+text-align: center;
+margin-bottom:-5px;
+font-weight: 500;
+color: #1c1c1c
+}
+.inner{
+    margin: 1.5em 0;
+}
+.input-label{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0;
+}
+label{
+    font-size: 0.7em;
+    padding: 0.5em 0;
+    color: #414651
+}
+
+button{
+  width:100%;
+    height: 30px;
+    background-color: #7816C9;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-size: 11px;
+    transition: all 0.3s ease-out;
+    
+}
+button:hover{
+    background-color: #49087e;
+    
+
+}
+h5{
+    font-size: 11px;
+    text-align: end;
+    margin:1em 0;
+    font-weight: normal;
+    color: #414651;
+}
+h6{
+    text-align: center;
+    font-weight: normal;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.social-icons img {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+a{
+    color: #2a94f4;
+    text-decoration: none;
+}
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    border: 1px solid #D5D7DA;
+    border-radius: 8px;
+    padding: 4px 8px;
+    background-color: #fff;
+}
+
+.input-wrapper img {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+}
+
+.input-wrapper input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+}
+.error-message {
+    
+    color: red;
+    font-size: 10px;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
